@@ -1,8 +1,15 @@
 import { Client } from '@notionhq/client';
 
-const databaseId_NextGame = "";
-const user_auth = "";
-const notion = new Client({ auth: user_auth });
+const databaseId_NextGame;
+const notion;
+
+export setOAuth(notionOAuth){
+    notion = new Client({ auth: notionOAuth });
+}
+    
+export setDatabaseId(notionId){
+    databaseId_NextGame = notionId;
+}
 
 export async function getAllNotionEntries() {
     let pages = [];
