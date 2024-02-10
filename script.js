@@ -9,5 +9,5 @@ function showOnPage() {
       selectedLanguage = "";
     }
     var checkbox4 = document.getElementById("checkbox_gamepass").checked;
-    document.getElementById("output").innerHTML = `${notionId} ${score} ${time} ${language} ${select}`;
+    document.getElementById("output").innerHTML = `${notionId} ${score} ${time} ${language} ${selectedLanguage}`;
 }
