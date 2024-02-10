@@ -1,1 +1,32 @@
-<h1> Notion videogames Updater </h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="center">
+    <input type="text" id="myText" placeholder="Paste your Notion Page ID">
+    <div>
+      <input type="checkbox" id="checkbox_score"> Score
+    </div>
+    <div>
+      <input type="checkbox" id="checkbox_time"> How Long To Beat
+    </div>
+    <div>
+      <input type="checkbox" id="checkbox_language"> Language
+      <select id="select_language">
+        <option value="Eng">English</option>
+        <option value="Ita">Italian</option>
+      </select>
+    </div>
+    <div>
+      <input type="checkbox" id="checkbox_gamepass"> Check if it's on GamePass
+    </div>
+    
+    <button onclick="showOnPage()">Update</button>
+    <p id="output"></p>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
