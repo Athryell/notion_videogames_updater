@@ -1,7 +1,7 @@
 import { Client } from '@notionhq/client';
 
-const databaseId_NextGame;
-const notion;
+const databaseId_NextGame = "";
+const notion = "";
 
 export setOAuth(notionOAuth){
     notion = new Client({ auth: notionOAuth });
