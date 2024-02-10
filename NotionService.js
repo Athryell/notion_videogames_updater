@@ -1,13 +1,13 @@
 import { Client } from '@notionhq/client';
 
-const databaseId_NextGame = "";
-const notion = "";
+let databaseId_NextGame = "";
+let notion = "";
 
-export setOAuth(notionOAuth){
+export function setOAuth(notionOAuth){
     notion = new Client({ auth: notionOAuth });
 }
     
-export setDatabaseId(notionId){
+export function setDatabaseId(notionId){
     databaseId_NextGame = notionId;
 }
 
@@ -31,8 +31,7 @@ export async function getAllNotionEntries() {
         }
     }
 
-    console.log(pages.length);
-    //return pages;
+    return pages;
 }
 
 export async function getNotionEntryNames() {
@@ -55,6 +54,5 @@ export async function getNotionEntryNames() {
       }
     }
     
-    console.log(pages.length);
-    //return names;
+    return names;
 }
